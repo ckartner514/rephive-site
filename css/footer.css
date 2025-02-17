@@ -1,25 +1,10 @@
-.footer {
-    background: linear-gradient(to bottom, rgba(27, 27, 105, 0.9), rgba(15, 30, 64, 0.9));
-    padding: 15px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.5), 
-                inset 0px 15px 20px rgba(255, 255, 255, 0.25), 
-                inset 0px -15px 20px rgba(0, 0, 0, 0.4);
-    backdrop-filter: blur(10px);
-    transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-}
-
 /* Organisation en deux colonnes avec une séparation */
 .footer-menu {
     display: flex;
     align-items: center;
+    justify-content: center; /* Centre le menu horizontalement */
     gap: 30px;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%); /* Centre le menu parfaitement */
+    width: 100%; /* S'assure que l'élément occupe toute la largeur */
 }
 
 /* Colonnes des liens */
@@ -27,11 +12,7 @@
     display: flex;
     flex-direction: column;
     gap: 8px; /* Espacement vertical entre les liens */
-    text-align: left; /* Aligner à droite par défaut */
-}
-
-.left-column {
-    text-align: left; /* Ajuste la colonne de gauche */
+    text-align: center; /* Centre le texte dans chaque colonne */
 }
 
 /* Barre verticale de séparation */
@@ -39,75 +20,5 @@
     width: 1px;
     height: 80px;
     background-color: #FFAB31;
+    align-self: center; /* Centre la barre de séparation */
 }
-
-/* Style des liens */
-.footer-menu a {
-    text-decoration: none;
-    color: var(--primary-color);
-    font-size: 1rem;
-    font-weight: 600;
-    transition: color 0.3s ease;
-}
-
-.footer-menu a:hover {
-    color: var(--hover-color);
-}
-/* Conteneur global pour organiser le logo + menu */
-.footer-container {
-    display: flex;
-    align-items: center;
-    gap: 40px; /* Espacement entre le logo et le menu */
-}
-
-/** Debut Logo **/
-.footer-logo img {
-    height: 100px; /* Taille ajustable du logo */
-    width: auto;
-    display: block;
-    margin-left: -260px; /* Ajuste la valeur négative pour déplacer à gauche */
-    mix-blend-mode: normal;
-    background-color: transparent;
-    padding: 5px;
-    border-radius: 5px;
-}
-/** Fin Logo **/
-
-/** Debut Conteneur des icônes à droite **/
-.footer-icons {
-    display: flex;
-    flex-direction: column; /* Les icônes sont alignées verticalement */
-    gap: 12px; /* Espacement entre les icônes */
-    position: absolute;
-    right: 450px; /* Augmente la valeur pour déplacer vers la gauche */
-}
-
-/* Style des liens des icônes */
-.icon-link {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    text-decoration: none;
-    color: var(--primary-color);
-    font-size: 1rem;
-    font-weight: 600;
-    transition: color 0.3s ease, transform 0.3s ease;
-}
-
-/* Taille et espacement des icônes */
-.footer-icons img {
-    height: 25px;
-    width: auto;
-    transition: transform 0.3s ease;
-}
-
-/* Effet au survol */
-.icon-link:hover {
-    color: var(--hover-color);
-}
-
-.icon-link:hover img {
-    transform: scale(1.1);
-}
-/** Fin Conteneur des icônes à droite **/
-
