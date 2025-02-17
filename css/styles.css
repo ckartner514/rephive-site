@@ -278,19 +278,20 @@
 /** ===== DEBUT SECTION LOGO + CTA AVEC EFFET CARROUSEL ===== **/
 /* ✅ Conteneur général avec effet carrousel */
 .footer-branding-container {
-    background: linear-gradient(to bottom, #1b1b69, #0f1e40);
-    padding: 20px 0;
-    border-radius: 15px;
-    max-width: 600px;
-    margin: 50px auto; /* ✅ Centre la section */
-    text-align: center;
+    background: linear-gradient(to bottom, #1b1b69, #0f1e40); /* 🔥 Même dégradé que le carrousel */
+    padding: 20px 0; /* Ajuste l'espacement interne */
+    border-radius: 15px; /* ✅ Arrondi comme le carrousel */
+    max-width: 600px; /* ✅ Ajuste la largeur au centre */
+    margin: 50px auto; /* ✅ Centre la section avec un bon espacement */
+    text-align: center; /* ✅ Centre le contenu */
     box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.5),
                 inset 0px 10px 20px rgba(255, 255, 255, 0.2),
                 inset 0px -10px 20px rgba(0, 0, 0, 0.4);
     position: relative;
-    top: 0px; /* 🔥 Supprime le décalage vers le haut */
-    margin-bottom: 20px; /* ✅ Ajoute un bon espacement en bas */
-    padding-bottom: 20px; /* ✅ Uniformise le padding */
+    top:-30px;
+    margin-bottom: 5px !important; /* Réduit l'espacement sous la section */
+    padding-bottom: 5px !important;
+    margin-top: 20px
 }
 
 /* ✅ Conteneur du logo + CTA */
@@ -300,7 +301,7 @@
     align-items: center;
     flex-direction: column;
     position: relative;
-    margin-bottom: 20px; /* ✅ Meilleur espacement */
+    margin-bottom: 10px;
 }
 
 /* ✅ Taille du logo */
