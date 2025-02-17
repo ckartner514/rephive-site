@@ -1,0 +1,139 @@
+/** ===== DEBUT SECTION TEXTE WHY US ===== **/
+/* ✅ Conteneur principal */
+.why-container {
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+/* ✅ Titre principal */
+.why-container h1 {
+    font-size: 2.5rem;
+    color: #1b1b69; 
+    margin-bottom: 20px;
+}
+
+/* ✅ Ajuster le titre pour plus d’équilibre */
+.why-title {
+    margin-bottom: 30px; /* ✅ Ajoute plus d'espace sous le titre */
+}
+
+/* ✅ Blocs "Why Us" */
+.why-item {
+    background: linear-gradient(to bottom, rgba(27, 27, 105, 0.9), rgba(15, 30, 64, 0.9));
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.5),
+                inset 0px 10px 20px rgba(255, 255, 255, 0.2),
+                inset 0px -10px 20px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+    transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    color: #ECB449;
+    padding: 25px 30px; /* ✅ Augmentation du padding pour un meilleur espacement interne */
+    margin: 30px auto; /* ✅ Augmente l'espacement vertical entre les blocs */
+    border-radius: 12px;
+    text-align: left;
+    max-width: 750px; /* ✅ Réduit légèrement la largeur pour éviter qu'ils soient trop larges */
+}
+
+/* ✅ Effet au survol */
+.why-item:hover {
+    background: linear-gradient(to bottom, rgb(23, 23, 108), rgba(20, 50, 100, 1));
+    box-shadow: 0px 22px 45px rgba(255, 200, 73, 0.3), 
+                inset 0px 12px 18px rgba(255, 255, 255, 0.2), 
+                inset 0px -12px 18px rgba(0, 0, 0, 0.3);
+}
+
+/* ✅ Titres des blocs */
+.why-item h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #ECB449; /* Jaune RepHive */
+}
+
+/* ✅ Texte des blocs */
+.why-item p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #ECB449; /* Jaune RepHive */
+}
+
+/* ✅ CTA final */
+.why-cta {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ECB449;
+    text-decoration: underline;
+}
+
+.why-cta:hover {
+    color: #FFE552; /* Jaune plus lumineux */
+}
+.why-item:first-child {
+    margin-top: 10px;
+}
+/** ===== FIN SECTION TEXTE WHY US ===== **/
+
+/** ===== DEBUT SECTION LOGO + CTA ===== **/
+
+.footer-branding-container {
+    background: linear-gradient(to bottom, #1b1b69, #0f1e40); /* 🔥 Même dégradé que les blocs */
+    padding: 20px 0; 
+    border-radius: 15px; 
+    max-width: 600px; 
+    margin: 50px auto; 
+    text-align: center; 
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.5),
+                inset 0px 10px 20px rgba(255, 255, 255, 0.2),
+                inset 0px -10px 20px rgba(0, 0, 0, 0.4);
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 30px; 
+}
+
+/* ✅ Conteneur du logo + CTA */
+.footer-branding {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+/* ✅ Taille du logo */
+.footer-logo {
+    width: 550px; 
+    height: auto;
+    display: block;
+    border-radius: 10px; 
+    filter: contrast(1.2) brightness(1.1);
+}
+
+/* ✅ Bouton CTA positionné sur l'image */
+.footer-cta {
+    position: absolute;
+    top: 66%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    background: #E6A400; 
+    color: #1b1b69; 
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    text-decoration: none;
+    box-shadow: 0px 5px 15px rgba(255, 171, 49, 0.6); 
+    transition: transform 0.3s ease-in-out, background 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    white-space: nowrap; 
+    min-width: 280px; 
+    text-align: center;
+}
+
+/* ✅ Effet au survol */
+.footer-cta:hover {
+    background: #FFD700; 
+    color: #1b1b69; 
+    box-shadow: 0px 5px 15px rgba(255, 171, 49, 0.8); 
+    transform: translate(-50%, -50%) scale(1.07);
+}
+/** ===== Fin SECTION LOGO + CTA ===== **/

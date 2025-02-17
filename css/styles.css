@@ -1,0 +1,345 @@
+/* ===== STYLE SPÉCIFIQUE À L'INDEX ===== */
+.index-text {
+    max-width: 900px; /* Augmente la largeur */
+    margin: 40px auto; /* Centre le bloc et ajoute de l'espace */
+    padding: 15px 30px; /* Réduit la hauteur avec moins de padding */
+    border: 2px solid var(--secondary-color); /* Bordure bleue fine */
+    background-color: transparent; /* Fond blanc semi-transparent */
+    border-radius: 8px; /* Coins arrondis */
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Effet de léger relief */
+}
+
+/** ---- DEBUT DESIGN 3 COLONES BLEUES --- */
+/* Section des services */
+.services {
+    padding: 60px 0;
+    text-align: center;
+}
+
+/* Conteneur des colonnes */
+.service-container {
+    display: flex;
+    justify-content: space-between; /* ✅ Aligne les colonnes */
+    gap: 20px; /* ✅ Même valeur pour les hexagones */
+    max-width: 1200px; /* ✅ Assure que tout fait la même largeur */
+    margin: auto;
+}
+
+
+
+/* Style des colonnes */
+.service-box {
+    background: linear-gradient(to bottom, #1b1b69, #0f1e40);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.5),
+                inset 0px 10px 20px rgba(255, 255, 255, 0.2),
+                inset 0px -10px 20px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    flex: 1;
+    min-width: 300px;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 350px;
+    
+    /* Couleur du texte (ajouté) */
+    color: #FFAB31; /* Remplace par la couleur que tu veux */
+}
+
+/* Effet au survol des colonnes */
+.service-box:hover {
+    transform: translateY(-5px); /* Légère élévation */
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.6),
+                inset 0px 15px 25px rgba(255, 255, 255, 0.3),
+                inset 0px -15px 25px rgba(0, 0, 0, 0.5); /* Effet de profondeur */
+    transition: all 0.3s ease-in-out; /* Animation fluide */
+}
+
+/* Style des titres */
+.service-box h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #FFAB31; /* Jaune doré (modifiable) */
+}
+
+/* Style des paragraphes */
+.service-box p {
+    font-size: 16px;
+    color: #FFAB31;   
+}
+
+/* Style des liens (boutons "Learn more") */
+.service-box a {
+    font-size: 16px;
+    font-weight: bold;
+    color: #E6A400;
+    text-decoration: none;
+    margin-top: auto;
+    display: block;
+    padding-top: 15px;
+}
+
+.service-box a:hover {
+    text-decoration: underline;
+}
+
+/* Taille des logos dans colones bleues */
+.service-box img {
+    width: 80px;  /* Largeur réduite */
+    height: auto; /* Ajuste automatiquement la hauteur pour garder les proportions */
+    max-height: 80px; /* Empêche l'image d'être trop grande */
+    margin: 0 auto 15px auto; /* Centre l’image et ajoute un espace en dessous */
+    display: block;
+}
+/** ---- FIN DESIGN 3 COLONES BLEUES --- */
+
+/** DEBUT HEXAGONES TRANSPARENTS + TEXTE EN DESSOUS **/
+
+.index-hex-container {
+    display: flex;
+    justify-content: space-between; /* ✅ Même espacement que les colonnes */
+    align-items: center;
+    gap: 15px; /* ✅ Même espace que les services */
+    max-width: 1000px; /* ✅ Exactement la même largeur que .service-container */
+    width: 100%;
+    margin: 40px auto 80px auto; /* ✅ Centre le cadre */
+    padding: 15px;
+    border-radius: 15px;
+    background: linear-gradient(to bottom, #1b1b69, #0f1e40);
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.5),
+                inset 0px 10px 20px rgba(255, 255, 255, 0.2),
+                inset 0px -10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.index-hex-item {
+    flex: 1; /* ✅ Permet aux 3 hexagones d’occuper la même largeur que les colonnes */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.index-hex-item p {
+    color: #FFAB31;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+/* Hexagones TRANSPARENTS */
+.index-hex {
+    width: 110px;
+    height: 120px;
+    padding: 4px;
+    background: #FFAB31;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    margin-top: auto; /* ✅ Fait descendre l'hexagone en bas */
+}
+.index-hex-text {
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 10px;
+    color: #FFAB31;
+}
+
+
+/* ✅ Assure que l'image ne dépasse pas */
+.index-hex img {
+    width: 95%;
+    height: 100%;
+    object-fit: cover;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    background: white; /* ✅ Optionnel : Fond blanc pour l'image */
+}
+
+/*Effet au survol (Index) */
+.index-hex:hover {
+    transform: scale(1.08);
+}
+
+/*Fleches entre photos */
+.hex-arrow {
+    font-size: 35px; /* ✅ Taille de la flèche */
+    color: #FFAB31; /* ✅ Couleur jaune */
+    margin: 0 15px; /* ✅ Espacement horizontal */
+    display: flex;
+    align-items: center; /* ✅ Centre parfaitement sur la hauteur des hexagones */
+    position: relative;
+    top: 50%; /* ✅ Alignement vertical */
+    transform: translateY(-50%); /* ✅ Corrige le décalage pour être parfaitement centré sur les hexagones */
+    font-weight: bold;
+    animation: arrow-move 1.5s infinite alternate ease-in-out; /* ✅ Effet dynamique */
+}
+
+/* ✅ Animation pour donner un léger mouvement */
+@keyframes arrow-move {
+    0% { transform: translateX(0) translateY(-50%); opacity: 0.5; }
+    100% { transform: translateX(5px) translateY(-50%); opacity: 1; }
+}
+/** FIN HEXAGONES TRANSPARENTS + TEXTE EN DESSOUS **/
+
+/** ===== DEBUT SECTION BOX INFO SOUS LES 3 IMAGES ===== **/
+
+/* ✅ Style de la boîte d'information */
+.info-box {
+    max-width: 900px;
+    margin: 20px auto 10px auto; /* Réduit uniquement la marge en bas */
+    padding: 20px 30px;
+    border: 2px solid #1B1B69;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    background-color: transparent;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    top: -10px;
+}
+
+/* ✅ Appliquer le style aux mots-clés */
+.highlight {
+    font-weight: bold; /* ✅ Mettre en gras */
+    color: #1B1B69; /* ✅ Bleu foncé */
+}
+
+/* ✅ Appliquer le style aux mots-clés plus importants */
+.highlight-bold {
+    font-weight: bold; /* ✅ Gras */
+    color: #1B1B69; /* ✅ Bleu foncé */  
+}
+/** ===== FIN SECTION BOX INFO SOUS LES 3 IMAGES ===== **/
+
+/** ===== DEBUT SECTION CARROUSEL ===== **/
+/* ✅ Section du carrousel */
+.industry-carousel {
+    text-align: center;
+    padding: 30px 0;
+    padding-bottom: 0px;
+    margin-bottom: 5px;
+}
+
+/* ✅ Titre du carrousel */
+.carousel-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #1B1B69; /* Bleu profond */
+    text-align: center;
+    margin-bottom: 15px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: -20px;
+}
+
+/* ✅ Conteneur du carrousel */
+.slideshow-container {
+    position: relative;
+    width: 100%;
+    max-width: 440px;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 30px;
+    background: linear-gradient(to bottom, #1b1b69, #0f1e40);
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.5),
+                inset 0px 10px 20px rgba(255, 255, 255, 0.2),
+                inset 0px -10px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* ✅ Style des slides */
+.slide {
+    display: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #ECB449; /* Jaune doré */
+    line-height: 0.8;
+}
+
+/* ✅ Style des images */
+.slide img {
+    display: block;
+    margin: 0 auto;
+    max-width: 88px;
+    max-height: 88px;
+}
+/** ===== FIN SECTION CARROUSEL ===== **/
+
+/** ===== DEBUT SECTION LOGO + CTA AVEC EFFET CARROUSEL ===== **/
+/* ✅ Conteneur général avec effet carrousel */
+.footer-branding-container {
+    background: linear-gradient(to bottom, #1b1b69, #0f1e40); /* 🔥 Même dégradé que le carrousel */
+    padding: 20px 0; /* Ajuste l'espacement interne */
+    border-radius: 15px; /* ✅ Arrondi comme le carrousel */
+    max-width: 600px; /* ✅ Ajuste la largeur au centre */
+    margin: 50px auto; /* ✅ Centre la section avec un bon espacement */
+    text-align: center; /* ✅ Centre le contenu */
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.5),
+                inset 0px 10px 20px rgba(255, 255, 255, 0.2),
+                inset 0px -10px 20px rgba(0, 0, 0, 0.4);
+    position: relative;
+    top:-30px;
+    margin-bottom: 5px !important; /* Réduit l'espacement sous la section */
+    padding-bottom: 5px !important;
+    margin-top: 20px
+}
+
+/* ✅ Conteneur du logo + CTA */
+.footer-branding {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+/* ✅ Taille du logo */
+.footer-logo {
+    width: 550px; /* Ajuste selon besoin */
+    height: auto;
+    display: block;
+    border-radius: 10px; 
+    filter: contrast(1.2) brightness(1.1); /* Augmente légèrement le contraste et la luminosité */
+   }
+
+/* ✅ Bouton CTA positionné sur l'image */
+.footer-cta {
+    position: absolute;
+    top: 66%; /* 🔥 Ajuste pour bien se placer entre le logo et le texte */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    background: #E6A400; /* Jaune doré */
+    color: #1b1b69; /* Bleu RepHive */
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    text-decoration: none;
+    box-shadow: 0px 5px 15px rgba(255, 171, 49, 0.6); 
+    transition: transform 0.3s ease-in-out, background 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    white-space: nowrap; 
+    min-width: 280px; /* ✅ Ajuste selon la largeur */
+    text-align: center;
+}
+
+/* ✅ Effet au survol + effet sous Connect- Close - Grow */
+.footer-cta:hover {
+    background: #FFD700; 
+    color: #1b1b69; 
+    box-shadow: 0px 5px 15px rgba(255, 171, 49, 0.8); /* Glow plus subtil */
+    transform: translate(-50%, -50%) scale(1.07);
+}
+
+/** ===== Fin SECTION LOGO + CTA AVEC EFFET CARROUSEL ===== **/

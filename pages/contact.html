@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | RepHive</title>
+    <link rel="stylesheet" href="../css/config.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/contact.css">
+</head>
+
+<body class="contact-page">
+   
+
+    <!-- ✅ Header chargé dynamiquement -->
+    <div id="header-placeholder"></div>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Contact Us?</h1>
+        <div class="intro">
+            <h2>Looking to expand your sales operations?</h2>
+            <h3 class="highlight-blue">
+                Whether you need <strong>independent sales reps</strong>, a <strong>Go-To-Market strategy</strong>, or help with <strong>local sales operations</strong>, our team is here to support you
+            </h3>
+            <br><br>
+            <p>Fill out the form below, and let’s discuss your needs</p>
+            
+        </div>
+
+        <!-- ✅ Formulaire -->
+        <section class="contact-container">
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Full Name *</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="company">Company Name</label>
+                    <input type="text" id="company" name="company">
+                </div>
+
+                <div class="form-group">
+                    <label for="service">Which service are you interested in?</label>
+                    <select id="service" name="service" required>
+                        <option value="" disabled selected>Select a service</option>
+                        <option value="sales-reps">Find Independent Sales Reps</option>
+                        <option value="go-to-market">Go-To-Market Strategy</option>
+                        <option value="local-sales">Local Sales Operations</option>
+                        <option value="other">Other (Specify in Message)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="industry">Select Your Industry</label>
+                    <select id="industry" name="industry" required>
+                        <option value="" disabled selected>Select an industry</option>
+                        <option value="agriculture">Agriculture & Farming Equipment</option>
+                        <option value="beauty">Beauty & Personal Care</option>
+                        <option value="cleaning">Cleaning & Sanitation Products</option>
+                        <option value="consumer-electronics">Consumer Electronics</option>
+                        <option value="fashion">Fashion & Textile</option>
+                        <option value="fitness">Fitness & Wellness</option>
+                        <option value="food">Food & Beverages</option>
+                        <option value="gifts">Gifts & Promotional Products</option>
+                        <option value="handmade">Handmade & Artisanal Products</option>
+                        <option value="healthcare">Healthcare & Pharmaceuticals</option>
+                        <option value="home-improvement">Home Improvement & DIY</option>
+                        <option value="hospitality">Hospitality & Catering</option>
+                        <option value="luxury">Luxury & Accessories</option>
+                        <option value="office-supplies">Office Supplies & Stationery</option>
+                        <option value="packaging">Packaging</option>
+                        <option value="pet">Pet & Veterinary Supplies</option>
+                        <option value="renewable-energy">Renewable Energy & Environment</option>
+                        <option value="retail">Retail & Consumer Goods</option>
+                        <option value="safety">Security & Safety Equipment</option>
+                        <option value="sports">Sport Equipment</option>
+                        <option value="technology">Technology & SaaS</option>
+                        <option value="toys">Toys & Games</option>
+                        <option value="wholesale">Wholesale & Distribution</option>
+                        <option value="others">Others</option>
+                    </select>
+                </div>               
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+
+                <label class="consent-text">
+                    <input type="checkbox" id="consent" required> I agree to be contacted by RepHive via email.
+                </label>
+
+                <div class="button-container">
+                    <button type="submit" class="btn-submit">Send Message</button>
+                </div>
+            </form>
+
+            <div id="confirmationMessage" class="confirmation">
+                Thank you! Your message has been sent successfully. We'll review it and get back to you shortly!
+            </div>
+        </section>
+    </main>
+
+    <!-- ✅ Footer chargé dynamiquement -->
+    <div id="footer-placeholder"></div>
+
+    <script src="../js/include.js" defer></script>
+
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            document.getElementById("contactForm").style.display = "none";
+            document.getElementById("confirmationMessage").style.display = "block";
+        });
+    </script>
+
+
+
+</body>
+</html>
