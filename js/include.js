@@ -1,10 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
     function getBasePath() {
-        // Vérifie si on est sur GitHub Pages (chemin contient /rephive-site/)
         if (window.location.pathname.includes("/rephive-site/")) {
             return "/rephive-site/";
         } else {
-            return "./"; // Chemin relatif en local
+            return "./"; 
         }
     }
 
@@ -17,9 +16,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 // Corriger les chemins d'images après l'injection
                 document.querySelectorAll("#" + id + " img").forEach(img => {
-                    if (!img.src.includes("http")) {
-                        img.src = basePath + img.getAttribute("src").replace("../", "");
+                    let imgPath = img.getAttribute("src");
+
+                    if (!img.src.includes("http") && imgPath.startsWith("../")) {
+                        img.src = basePath + imgPath.replace("../", ""); // Supprime proprement le '../'
                     }
+
+                    console.log(`Fixed image path: ${img.src}`); // Debugging
                 });
             })
             .catch(error => console.error(`Error loading ${file}:`, error));
@@ -28,3 +31,4 @@ document.addEventListener("DOMContentLoaded", function () {
     loadComponent("header-placeholder", "header.html");
     loadComponent("footer-placeholder", "footer.html");
 });
+
