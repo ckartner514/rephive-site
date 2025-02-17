@@ -2,40 +2,17 @@
 <header class="header">
     <div class="container">
         <nav class="nav">
-            <a href="index.html" class="logo">
+            <a href="https://ckartner514.github.io/rephive-site/index.html" class="logo">
                 <img src="img/RepHive-Logo.png" alt="RepHive Logo">
             </a>
             <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="pages/solutions.html">Our Solutions</a></li>
-                <li><a href="pages/why-us.html">Why Us?</a></li>
-                <li><a href="pages/pricing.html">Pricing</a></li>
-                <li><a href="pages/faq.html">FAQ</a></li>
+                <li><a href="https://ckartner514.github.io/rephive-site/index.html" target="_self">Home</a></li>
+                <li><a href="https://ckartner514.github.io/rephive-site/pages/solutions.html" target="_self">Our Solutions</a></li>
+                <li><a href="https://ckartner514.github.io/rephive-site/pages/why-us.html" target="_self">Why Us?</a></li>
+                <li><a href="https://ckartner514.github.io/rephive-site/pages/pricing.html" target="_self">Pricing</a></li>
+                <li><a href="https://ckartner514.github.io/rephive-site/pages/faq.html" target="_self">FAQ</a></li>
             </ul>
-            <a href="pages/contact.html" class="btn-primary">Contact Us</a>
+            <a href="https://ckartner514.github.io/rephive-site/pages/contact.html" class="btn-primary" target="_self">Contact Us</a>
         </nav>
     </div>
 </header>
-
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-    let basePath = window.location.pathname.includes("/pages/") ? "../" : "./";
-
-    function setLink(id, path) {
-        let link = document.getElementById(id);
-        link.href = basePath + path;
-        link.addEventListener("click", function (event) {
-            event.preventDefault(); // Empêche le comportement par défaut du `#`
-            window.location.href = basePath + path; // Redirige proprement
-        });
-    }
-
-    setLink("home-link", "index.html");
-    setLink("solutions-link", "pages/solutions.html");
-    setLink("whyus-link", "pages/why-us.html");
-    setLink("pricing-link", "pages/pricing.html");
-    setLink("faq-link", "pages/faq.html");
-    setLink("contact-link", "pages/contact.html");
-});
-
-</script>
