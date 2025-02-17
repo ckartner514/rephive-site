@@ -18,14 +18,24 @@
 </header>
 
 <script>
-    document.addEventListener("DOMContentLoaded", function () {
-        let basePath = window.location.pathname.includes("/pages/") ? "../" : "./";
+document.addEventListener("DOMContentLoaded", function () {
+    let basePath = window.location.pathname.includes("/pages/") ? "../" : "./";
 
-        document.getElementById("home-link").href = basePath + "index.html";
-        document.getElementById("solutions-link").href = basePath + "pages/solutions.html";
-        document.getElementById("whyus-link").href = basePath + "pages/why-us.html";
-        document.getElementById("pricing-link").href = basePath + "pages/pricing.html";
-        document.getElementById("faq-link").href = basePath + "pages/faq.html";
-        document.getElementById("contact-link").href = basePath + "pages/contact.html";
-    });
+    function setLink(id, path) {
+        let link = document.getElementById(id);
+        link.href = basePath + path;
+        link.addEventListener("click", function (event) {
+            event.preventDefault(); // Empêche le comportement par défaut du `#`
+            window.location.href = basePath + path; // Redirige proprement
+        });
+    }
+
+    setLink("home-link", "index.html");
+    setLink("solutions-link", "pages/solutions.html");
+    setLink("whyus-link", "pages/why-us.html");
+    setLink("pricing-link", "pages/pricing.html");
+    setLink("faq-link", "pages/faq.html");
+    setLink("contact-link", "pages/contact.html");
+});
+
 </script>
