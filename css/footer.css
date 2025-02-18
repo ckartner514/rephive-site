@@ -15,11 +15,14 @@
 /* Organisation en deux colonnes avec une séparation */
 .footer-menu {
     display: flex;
-    align-items: center;
+    align-items: center; /* Aligne les éléments verticalement */
+    justify-content: center;
     gap: 30px;
     position: absolute;
     left: 50%;
-    transform: translateX(-50%); /* Centre le menu parfaitement */
+    transform: translateX(-50%);
+    top: 50%; /* Ajout pour centrer verticalement */
+    transform: translate(-50%, -50%); /* Centre parfaitement dans le footer */
 }
 
 /* Colonnes des liens */

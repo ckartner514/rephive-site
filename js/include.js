@@ -31,4 +31,3 @@ document.addEventListener("DOMContentLoaded", function () {
     loadComponent("header-placeholder", "header.html");
     loadComponent("footer-placeholder", "footer.html");
 });
-

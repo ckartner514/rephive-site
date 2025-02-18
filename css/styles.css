@@ -343,3 +343,11 @@
 }
 
 /** ===== Fin SECTION LOGO + CTA AVEC EFFET CARROUSEL ===== **/
+
+/* ✅ Cacher le bouton "Book a Meeting" sur mobile */
+@media screen and (max-width: 768px) {
+    .cta-button {
+        display: none !important;
+    }
+}
+
