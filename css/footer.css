@@ -114,123 +114,47 @@
 }
 /** Fin Conteneur des icônes à droite **/
 
-@media screen and (max-width: 768px) {
-  /* Conteneur principal du footer adapté pour mobile */
-  .footer-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 600px;   /* Ajuste cette valeur selon ta mise en page */
-    margin: 0 auto;
-    padding: 0 20px;
-    gap: 20px;
-  }
+/** Footer mobile **/
 
-  /* Logo centré en haut */
-  .footer-logo img {
-    height: 60px;  /* Ajuste la taille du logo */
-    width: auto;
-  }
-
-  /* Menu en deux colonnes centré */
-  .footer-menu {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    gap: 20px;
-  }
-  
-  .menu-column {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    flex: 1;
-    align-items: center;
-  }
-  
-  /* On conserve les mêmes styles pour les liens */
-  .footer-menu a {
-    text-decoration: none;
-    color: #FFAB31;
-    font-size: 1rem;
-    font-weight: 600;
-    transition: color 0.3s;
-  }
-  
-  .footer-menu a:hover {
-    color: #FFE552;
-  }
-  
-  /* Icônes sociales en ligne et centrées */
-  .footer-icons {
-    display: flex;
-    flex-direction: row;
-    gap: 15px;
-    justify-content: center;
-    width: 100%;
-  }
-  
-  .icon-link {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-decoration: none;
-    color: #FFAB31;
-    font-size: 0.8rem;
-    font-weight: 600;
-    transition: color 0.3s;
-  }
-  
-  .icon-link:hover {
-    color: #FFE552;
-  }
-  
-  .footer-icons img {
-    height: 20px;
-    width: auto;
-    margin-bottom: 5px;
-  }
-}
 @media screen and (max-width: 768px) {
-    /* Conteneur principal du footer adapté pour mobile */
+      /* Conteneur principal du footer */
     .footer-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      max-width: 600px;   /* Ajuste cette valeur selon ta mise en page */
-      margin: 0 auto;
-      padding: 0 20px;
-      gap: 20px;
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: center !important;
+      max-width: 600px !important;
+      margin: 0 auto !important;
+      padding: 0 20px !important;
+      gap: 20px !important;
     }
   
-    /* Logo centré en haut */
+    /* Logo centré */
     .footer-logo img {
-      height: 60px;  /* Ajuste la taille du logo */
+      height: 60px !important;
       width: auto;
     }
   
     /* Menu en deux colonnes centré */
     .footer-menu {
-      display: flex;
-      width: 100%;
-      justify-content: center;
-      gap: 20px;
+      display: flex !important;
+      width: 100% !important;
+      justify-content: center !important;
+      gap: 20px !important;
     }
     
     .menu-column {
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
-      flex: 1;
-      align-items: center;
+      display: flex !important;
+      flex-direction: column !important;
+      gap: 8px !important;
+      flex: 1 !important;
+      align-items: center !important;
     }
     
-    /* On conserve les mêmes styles pour les liens */
     .footer-menu a {
-      text-decoration: none;
-      color: #FFAB31;
-      font-size: 1rem;
-      font-weight: 600;
+      text-decoration: none !important;
+      color: #FFAB31 !important;
+      font-size: 1rem !important;
+      font-weight: 600 !important;
       transition: color 0.3s;
     }
     
@@ -240,21 +164,21 @@
     
     /* Icônes sociales en ligne et centrées */
     .footer-icons {
-      display: flex;
-      flex-direction: row;
-      gap: 15px;
-      justify-content: center;
-      width: 100%;
+      display: flex !important;
+      flex-direction: row !important;
+      gap: 15px !important;
+      justify-content: center !important;
+      width: 100% !important;
     }
     
     .icon-link {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-decoration: none;
-      color: #FFAB31;
-      font-size: 0.8rem;
-      font-weight: 600;
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: center !important;
+      text-decoration: none !important;
+      color: #FFAB31 !important;
+      font-size: 0.8rem !important;
+      font-weight: 600 !important;
       transition: color 0.3s;
     }
     
@@ -263,9 +187,9 @@
     }
     
     .footer-icons img {
-      height: 20px;
+      height: 20px !important;
       width: auto;
-      margin-bottom: 5px;
+      margin-bottom: 5px !important;
     }
   }
   

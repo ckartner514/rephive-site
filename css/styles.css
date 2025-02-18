@@ -308,6 +308,12 @@
     box-shadow: 0px 5px 15px rgba(255, 171, 49, 0.8);
     transform: translate(-50%, -50%) scale(1.07);
 }
+/** ENLEVER LE BOOK A MEETING SUR MOBILE **/
+@media screen and (max-width: 768px) {
+    .cta-button {
+        display: none !important;
+    }
+}
 
 /** MOBILE OPTIMIZATIONS **/
 @media screen and (max-width: 768px) {
