@@ -206,3 +206,85 @@
     }
     
 }
+/** MOBILE OPTIMIZATIONS **/
+@media screen and (max-width: 768px) {
+    .index-text {
+        margin: 10px auto;
+        padding: 10px 15px;
+    }
+    .service-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .service-box {
+        max-width: 60%;
+        margin-bottom: 10px;
+    }
+    .index-hex-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .index-hex {
+        width: 50px;
+        height: 100px;
+    }
+    
+    .carousel-title {
+        font-size: 18px;
+    }
+    .slideshow-container {
+        max-width: 70%;
+        padding: 10px;
+    }
+}
+/** Modifier taille cta + logo + bloc bleu **/ 
+@media (max-width: 768px) {
+    /* Ajuste le conteneur principal */
+    .footer-branding-container {
+        max-width: 70%; /* Réduit la largeur pour s'adapter aux écrans mobiles */
+        padding: 15px 0;
+        margin: 30px auto;
+        top: -20px;
+        border-radius: 10px;
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4),
+                    inset 0px 7px 15px rgba(255, 255, 255, 0.15),
+                    inset 0px -7px 15px rgba(0, 0, 0, 0.3);
+        display: flex; 
+        flex-direction: column; 
+        align-items: center; /* Centre horizontalement le contenu */
+        justify-content: center; /* Centre verticalement si nécessaire */
+    }
+
+    /* Ajuste le conteneur interne */
+    .footer-branding {
+        margin-bottom: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centre les éléments */
+    }
+
+    /* Réduit la taille du logo et assure son centrage */
+    .footer-logo {
+        width: 80%; /* Ajuste la largeur pour s'adapter aux écrans mobiles */
+        max-width: 300px; /* Empêche le logo de devenir trop grand */
+        border-radius: 8px;
+        display: block;
+        margin: 0 auto; /* Centre horizontalement */
+    }
+
+    /* Ajuste le bouton CTA */
+    .footer-cta {
+        font-size: 10px; /* Diminue la taille du texte */
+        padding: 4px 8px; /* Ajuste le padding */
+        min-width: 100px; /* Réduit la largeur minimale du bouton */
+        border-radius: 6px;
+        box-shadow: 0px 4px 12px rgba(255, 171, 49, 0.5);
+    }
+
+    /* Ajuste l'effet de hover du bouton CTA */
+    .footer-cta:hover {
+        transform: translate(-50%, -50%) scale(1.05);
+        box-shadow: 0px 4px 12px rgba(255, 171, 49, 0.7);
+    }
+}
+/** Fin Modifier taille cta + logo + bloc bleu **/
