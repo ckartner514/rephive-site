@@ -73,4 +73,14 @@
 }
 /* ===== FIN CONTACT BUTTON ===== */
 
+@media screen and (max-width: 768px) {
+    .desktop-only {
+        display: none !important;
+    }
+}
 
+@media screen and (max-width: 768px) {
+    .desktop-only {
+        display: none !important;
+    }
+}

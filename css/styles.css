@@ -351,3 +351,9 @@
     }
 }
 
+@media screen and (max-width: 768px) {
+    .cta-button {
+        display: none !important;
+        background: red; /* Pour vérifier */
+    }
+}
