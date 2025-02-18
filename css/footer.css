@@ -113,3 +113,159 @@
     transform: scale(1.1);
 }
 /** Fin Conteneur des icônes à droite **/
+
+@media screen and (max-width: 768px) {
+  /* Conteneur principal du footer adapté pour mobile */
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;   /* Ajuste cette valeur selon ta mise en page */
+    margin: 0 auto;
+    padding: 0 20px;
+    gap: 20px;
+  }
+
+  /* Logo centré en haut */
+  .footer-logo img {
+    height: 60px;  /* Ajuste la taille du logo */
+    width: auto;
+  }
+
+  /* Menu en deux colonnes centré */
+  .footer-menu {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .menu-column {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex: 1;
+    align-items: center;
+  }
+  
+  /* On conserve les mêmes styles pour les liens */
+  .footer-menu a {
+    text-decoration: none;
+    color: #FFAB31;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: color 0.3s;
+  }
+  
+  .footer-menu a:hover {
+    color: #FFE552;
+  }
+  
+  /* Icônes sociales en ligne et centrées */
+  .footer-icons {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .icon-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #FFAB31;
+    font-size: 0.8rem;
+    font-weight: 600;
+    transition: color 0.3s;
+  }
+  
+  .icon-link:hover {
+    color: #FFE552;
+  }
+  
+  .footer-icons img {
+    height: 20px;
+    width: auto;
+    margin-bottom: 5px;
+  }
+}
+@media screen and (max-width: 768px) {
+    /* Conteneur principal du footer adapté pour mobile */
+    .footer-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 600px;   /* Ajuste cette valeur selon ta mise en page */
+      margin: 0 auto;
+      padding: 0 20px;
+      gap: 20px;
+    }
+  
+    /* Logo centré en haut */
+    .footer-logo img {
+      height: 60px;  /* Ajuste la taille du logo */
+      width: auto;
+    }
+  
+    /* Menu en deux colonnes centré */
+    .footer-menu {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      gap: 20px;
+    }
+    
+    .menu-column {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      flex: 1;
+      align-items: center;
+    }
+    
+    /* On conserve les mêmes styles pour les liens */
+    .footer-menu a {
+      text-decoration: none;
+      color: #FFAB31;
+      font-size: 1rem;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+    
+    .footer-menu a:hover {
+      color: #FFE552;
+    }
+    
+    /* Icônes sociales en ligne et centrées */
+    .footer-icons {
+      display: flex;
+      flex-direction: row;
+      gap: 15px;
+      justify-content: center;
+      width: 100%;
+    }
+    
+    .icon-link {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-decoration: none;
+      color: #FFAB31;
+      font-size: 0.8rem;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+    
+    .icon-link:hover {
+      color: #FFE552;
+    }
+    
+    .footer-icons img {
+      height: 20px;
+      width: auto;
+      margin-bottom: 5px;
+    }
+  }
+  

@@ -60,13 +60,70 @@
     color: #FFE552;
 }
 
-/** MOBILE OPTIMIZATIONS **/
 @media screen and (max-width: 768px) {
-    .faq-container {
-        margin: 20px auto;
-        padding: 10px;
+    /* Le conteneur principal du footer */
+    .footer-container {
+      flex-direction: column;   /* Au lieu de l'alignement horizontal */
+      align-items: center;      /* Centre horizontalement */
+      justify-content: center;
+      gap: 20px;                /* Espace vertical entre les blocs */
+      padding: 10px;            /* Réduis la marge interne si besoin */
+      max-width: 100%;          /* Assure-toi de ne pas dépasser la largeur de l'écran */
+      box-sizing: border-box;   /* Gère correctement le padding */
     }
-    .faq-item {
-        padding: 15px;
+  
+    /* Le logo */
+    .footer-logo img {
+      max-width: 100%;         /* Empêche le logo de dépasser la largeur du conteneur */
+      height: auto;
     }
+  
+    /* Le menu : empiler les colonnes et masquer le séparateur vertical */
+    .footer-menu {
+      display: flex;
+      flex-direction: column;  /* Les deux colonnes passent l’une sous l’autre */
+      align-items: center;     /* Centre le texte */
+      gap: 20px;               /* Espace vertical entre les colonnes */
+      text-align: center;
+    }
+    .menu-divider {
+      display: none;           /* Cache la barre verticale */
+    }
+  
+    /* Les icônes sociales : on peut les mettre en ligne ou en colonne */
+    .footer-icons {
+      display: flex;
+      flex-direction: row;     /* Met les icônes sur une seule ligne */
+      gap: 20px;
+      justify-content: center; /* Centre horizontalement */
+      max-width: 100%;         /* Pour éviter tout dépassement */
+    }
+  
+    .footer-icons img {
+      max-width: 30px;         /* Ajuste la taille si nécessaire */
+      height: auto;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .index-text {
+        margin: 10px auto;
+        padding: 10px 15px;
+    }
+    .service-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .service-box {
+        max-width: 60%;
+        margin-bottom: 10px;
+    }
+    .index-hex-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .index-hex {
+        width: 50px;
+        height: 100px;
+    }
+    
 }
