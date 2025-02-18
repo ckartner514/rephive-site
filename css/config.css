@@ -162,10 +162,10 @@ body.contact-page .cta-button {
 
 @media (max-width: 768px) {
     h1 {
-        font-size: 90%; /* Réduit de 10% la taille du H1 */
+        font-size: 80%; /* Réduit de 10% la taille du H1 */
     }
 
     h2 {
-        font-size: 85%; /* Réduit de 10% la taille du H2 */
+        font-size: 75%; /* Réduit de 10% la taille du H2 */
     }
 }

@@ -117,12 +117,13 @@
 /** Footer mobile **/
 
 @media screen and (max-width: 768px) {
-      /* Conteneur principal du footer */
+  
+    /* Conteneur principal du footer */
     .footer-container {
       display: flex !important;
       flex-direction: column !important;
       align-items: center !important;
-      max-width: 600px !important;
+      max-width: 250px !important;
       margin: 0 auto !important;
       padding: 0 20px !important;
       gap: 20px !important;

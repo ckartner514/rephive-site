@@ -274,10 +274,10 @@
 
     /* Ajuste le bouton CTA */
     .footer-cta {
-        font-size: 10px; /* Diminue la taille du texte */
-        padding: 4px 8px; /* Ajuste le padding */
-        min-width: 100px; /* Réduit la largeur minimale du bouton */
-        border-radius: 6px;
+        font-size: 8px; /* Diminue la taille du texte */
+        padding: 2px 4px; /* Ajuste le padding */
+        min-width: 50px; /* Réduit la largeur minimale du bouton */
+        border-radius: 3px;
         box-shadow: 0px 4px 12px rgba(255, 171, 49, 0.5);
     }
 
