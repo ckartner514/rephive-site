@@ -145,3 +145,11 @@
 .contact-page .cta-button {
     display: none !important;
 }
+.privacy-note {
+    font-size: 0.85rem; /* Taille discrète mais lisible */
+    color: #ECB449; /* Même couleur dorée que le reste du texte */
+    text-align: center;
+    margin-top: 15px; /* Espacement sous le bouton */
+    opacity: 0.8; /* Rend le texte légèrement plus subtil */
+}
+/** FIN FORMULAIRE **/
