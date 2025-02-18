@@ -1,3 +1,4 @@
+/** ---- DEBUT DESIGN 3 COLONNES BLEUES --- **/
 .solutions {
     padding: 60px 0;
     text-align: center;
@@ -16,6 +17,7 @@
     margin: 0 auto 40px auto;
 }
 
+/* Conteneur des services */
 .service-container {
     display: flex;
     justify-content: space-between;
@@ -25,6 +27,7 @@
     flex-wrap: wrap;
 }
 
+/* Style des blocs services */
 .service-box {
     background: linear-gradient(to bottom, #1b1b69, #0f1e40);
     padding: 25px;
@@ -68,6 +71,7 @@
     text-decoration: underline;
 }
 
+/* Icônes */
 .service-box img {
     width: 80px;
     height: auto;
@@ -76,7 +80,9 @@
     display: block;
 }
 
-/** ---- HEXAGONES DRAPEAUX ---- **/
+/** ---- FIN DESIGN 3 COLONNES BLEUES --- **/
+
+/** ---- DEBUT HEXAGONES DRAPEAUX (Our Solutions) ---- **/
 .flags-container {
     display: flex;
     justify-content: center;
@@ -108,6 +114,7 @@
     z-index: -1;
 }
 
+/* Effet glow x5 en hover */
 .hexagon:hover {
     box-shadow: 0px 0px 50px 15px #1b1b69;
 }
@@ -118,26 +125,30 @@
     object-fit: cover;
 }
 
+/* Ajustement spécifique pour le drapeau US */
 .usa-flag {
     object-position: 40% center;
 }
+/** ---- FIN HEXAGONES DRAPEAUX ---- **/
 
-/** ---- SECTION LOGO + CTA ---- **/
+/** ===== DEBUT SECTION LOGO + CTA ===== **/
+
 .footer-branding-container {
-    background: linear-gradient(to bottom, #1b1b69, #0f1e40);
-    padding: 20px 0;
-    border-radius: 15px;
-    max-width: 600px;
-    margin: 50px auto;
-    text-align: center;
+    background: linear-gradient(to bottom, #1b1b69, #0f1e40); /* 🔥 Même dégradé que les blocs */
+    padding: 20px 0; 
+    border-radius: 15px; 
+    max-width: 600px; 
+    margin: 50px auto; 
+    text-align: center; 
     box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.5),
                 inset 0px 10px 20px rgba(255, 255, 255, 0.2),
                 inset 0px -10px 20px rgba(0, 0, 0, 0.4);
     position: relative;
     margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 30px; 
 }
 
+/* ✅ Conteneur du logo + CTA */
 .footer-branding {
     display: flex;
     justify-content: center;
@@ -147,60 +158,41 @@
     margin-bottom: 10px;
 }
 
+/* ✅ Taille du logo */
 .footer-logo {
-    width: 550px;
+    width: 550px; 
     height: auto;
     display: block;
-    border-radius: 10px;
+    border-radius: 10px; 
     filter: contrast(1.2) brightness(1.1);
 }
 
+/* ✅ Bouton CTA positionné sur l'image */
 .footer-cta {
     position: absolute;
-    top: 66%;
+    top: 66%; 
     left: 50%;
     transform: translate(-50%, -50%);
     display: inline-block;
-    background: #E6A400;
-    color: #1b1b69;
+    background: #E6A400; 
+    color: #1b1b69; 
     padding: 12px 24px;
     font-size: 18px;
     font-weight: bold;
     border-radius: 8px;
     text-decoration: none;
-    box-shadow: 0px 5px 15px rgba(255, 171, 49, 0.6);
+    box-shadow: 0px 5px 15px rgba(255, 171, 49, 0.6); 
     transition: transform 0.3s ease-in-out, background 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    white-space: nowrap;
-    min-width: 280px;
+    white-space: nowrap; 
+    min-width: 280px; 
     text-align: center;
 }
 
+/* ✅ Effet au survol */
 .footer-cta:hover {
-    background: #FFD700;
-    color: #1b1b69;
-    box-shadow: 0px 5px 15px rgba(255, 171, 49, 0.8);
+    background: #FFD700; 
+    color: #1b1b69; 
+    box-shadow: 0px 5px 15px rgba(255, 171, 49, 0.8); 
     transform: translate(-50%, -50%) scale(1.07);
 }
-
-/** MOBILE OPTIMIZATIONS **/
-@media screen and (max-width: 768px) {
-    .service-container {
-        flex-direction: column;
-        align-items: center;
-    }
-    .service-box {
-        max-width: 90%;
-        margin-bottom: 20px;
-    }
-    .flags-container {
-        flex-direction: column;
-        gap: 20px;
-    }
-    .hexagon {
-        width: 70px;
-        height: 80px;
-    }
-    .footer-branding-container {
-        max-width: 90%;
-    }
-}
+/** ===== Fin SECTION LOGO + CTA ===== **/

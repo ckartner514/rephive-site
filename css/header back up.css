@@ -13,17 +13,16 @@
     transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     mix-blend-mode: normal;
 }
-
 /* ===== NAVIGATION ===== */
 .nav {
     display: flex;
     align-items: center;
-    gap: 40px;
+    gap: 40px; /* Espace entre le logo et le menu */
 }
 
 /* ===== LOGO ===== */
 .logo img {
-    height: 90px;
+    height: 90px; /* Ajuste la hauteur du logo */
     width: auto;
     mix-blend-mode: normal;
     background-color: transparent;
@@ -33,10 +32,10 @@
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 40px;
+    gap: 40px; /* Espacement entre les éléments du menu */
     padding: 0;
     margin: 0;
-    align-items: center;
+    align-items: center; /* Alignement vertical */
 }
 
 .nav-links li {
@@ -59,7 +58,7 @@
 /* ===== DEBUT CONTACT BUTTON ===== */
 .btn-primary {
     background-color: var(--primary-color);
-    color: var(--secondary-color);
+    color: var(--secondary-color); /* Garde le texte en bleu */
     padding: 12px 20px;
     border-radius: 5px;
     border: none;
@@ -69,37 +68,12 @@
 }
 
 .btn-primary:hover {
-    background-color: var(--hover-color);
-    color: var(--secondary-color);
+    background-color: var(--hover-color); /* Change le fond au survol */
+    color: var(--secondary-color); /* Garde le texte en bleu */
 }
-
-/* ===== MOBILE MENU ===== */
-@media screen and (max-width: 768px) {
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        background: var(--secondary-color);
-        position: absolute;
-        top: 60px;
-        left: 0;
-        width: 100%;
-        padding: 10px 0;
-    }
-    .nav-links.active {
-        display: flex;
-    }
-    .hamburger {
-        display: block;
-        cursor: pointer;
-        font-size: 1.5rem;
-        color: var(--primary-color);
-    }
-}
+/* ===== FIN CONTACT BUTTON ===== */
 
 
-/* ===== MASQUER LES ÉLÉMENTS SPECIFIQUES DES DESKTOP ===== */
-@media screen and (max-width: 768px) {
-    .desktop-only {
-        display: none !important;
-    }
-}
+
+
+

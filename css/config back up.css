@@ -3,6 +3,7 @@
 /* ✅ Importation de la police Poppins */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
+
 /* ✅ Variables globales */
 :root {
     --primary-color: #FFAB31; /* Jaune miel */
@@ -28,16 +29,16 @@ body {
 
 /* ✅ Paragraphe en noir avec tag words en bleu */
 p {
-    font-size: 1.1rem;
-    font-weight: 400;
-    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;  /* Uniformise la taille */
+    font-weight: 400;   /* Assure un rendu homogène */
+    font-family: 'Poppins', sans-serif; /* Remplace par la police utilisée ailleurs */
     line-height: 1.5;
-    color: black;
+    color: black; /* Ajuste si besoin */
 }
 
 p .tag-word {
     color: var(--secondary-color);
-    font-weight: bold;
+    font-weight: bold; /* Optionnel si tu veux que ça ressorte un peu plus */
 }
 
 /* ✅ Liens */
@@ -82,14 +83,13 @@ a:hover {
 
 /* ===== ESPACEMENT ENTRE HEADER ET CONTENU ===== */
 main {
-    margin-top: 40px;
+    margin-top: 40px; /* Ajuste selon tes besoins */
 }
 
 /* ===== ESPACEMENT ENTRE CONTENU ET FOOTER ===== */
 .footer {
-    margin-top: 40px;
+    margin-top: 40px; /* Ajuste selon tes besoins */
 }
-
 /* ===== CENTRAGE DU TEXTE ===== */
 main {
     display: flex;
@@ -97,45 +97,46 @@ main {
     align-items: center;
     justify-content: center;
     text-align: center;
+    
 }
-
 /* ===== BACKGROUND GLOBAL ===== */
 body {
     background: url('../img/background-hive.png') no-repeat center center fixed;
     background-size: cover;
 }
-
 /* ===== H2 en pas Bold ===== */
 h2 {
     font-weight: normal;
 }
-
 /** ---- DEBUT BOUTON CTA FIXE A DROITE --- */
+
 .cta-button {
     position: fixed;
     right: 20px;
     top: 20%;
     transform: translateY(-50%);
-    background: #E6A400;
-    color: #1b1b69;
+    background: #E6A400; /* Jaune doré */
+    color: #1b1b69; /* Bleu RepHive */
     padding: 12px 18px;
     font-size: 1.2rem;
     font-weight: bold;
     border-radius: 10px;
     text-decoration: none;
-    box-shadow: 0px 0px 12px rgba(255, 171, 49, 0.6);
+    box-shadow: 0px 0px 12px rgba(255, 171, 49, 0.6); /* ✅ Glow subtil dès le départ */
     transition: transform 0.3s ease-in-out, background 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    z-index: 1100;
+    z-index: 1100; /* ✅ Assure qu’il passe au-dessus de tout */
 }
 
+/* ✅ Effet au survol : Glow + Légère animation */
 .cta-button:hover {
-    background: #FFD700;
-    color: #0f1e40;
-    box-shadow: 0px 0px 25px rgba(255, 171, 49, 0.9);
+    background: #FFD700; /* Jaune plus lumineux */
+    color: #0f1e40; /* Bleu plus foncé */
+    box-shadow: 0px 0px 25px rgba(255, 171, 49, 0.9); /* ✅ Glow plus intense */
     transform: translateY(-50%) scale(1.07);
-    animation: pulse 1.5s infinite;
+    animation: pulse 1.5s infinite; /* ✅ Pulse plus fluide */
 }
 
+/* ✅ Animation "pulse" améliorée */
 @keyframes pulse {
     0% { transform: translateY(-50%) scale(1.02); }
     50% { transform: translateY(-50%) scale(1.07); }
@@ -145,16 +146,4 @@ h2 {
 body.contact-page .cta-button {
     display: none;
 }
-
-/* ===== MOBILE OPTIMIZATIONS ===== */
-@media screen and (max-width: 768px) {
-    body {
-        background-attachment: scroll;
-    }
-    .cta-button {
-        right: 10px;
-        top: 80%;
-        font-size: 1rem;
-        padding: 10px 15px;
-    }
-}
+/** ---- FIN BOUTON CTA FIXE A DROITE --- */

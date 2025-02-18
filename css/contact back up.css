@@ -1,4 +1,5 @@
 /** DEBUT FORMULAIRE **/
+/* ✅ Centrer le formulaire */
 .contact-container {
     max-width: 500px;
     margin: 50px auto;
@@ -13,19 +14,21 @@
     transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
+/* Couleur texte  */
 .intro p {
     font-size: 1.1rem;
     color: #1b1b69;
-    margin-top: 15px;
-    line-height: 1.6;
+    margin-top: 15px; /* Ajoute de l'espace au-dessus du texte */
+    line-height: 1.6; /* Améliore la lisibilité */
 }
-
+/* ✅ Titre */
 .contact-container h2 {
     font-size: 2rem;
     color: #ECB449;
     margin-bottom: 10px;
 }
 
+/* ✅ Texte sous le titre */
 .contact-container {
     max-width: 500px;
     margin: 50px auto;
@@ -40,6 +43,8 @@
     transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
+
+/* ✅ Formulaire */
 .contact-form {
     display: flex;
     flex-direction: column;
@@ -47,6 +52,7 @@
     text-align: left;
 }
 
+/* ✅ Groupe de champs */
 .form-group {
     display: flex;
     flex-direction: column;
@@ -54,12 +60,14 @@
     margin-bottom: 20px;
 }
 
+/* ✅ Labels */
 .form-group label {
     font-weight: 600;
     color: #ECB449;
     margin-bottom: 5px;
 }
 
+/* ✅ Champs input et textarea */
 .form-group input,
 .form-group textarea {
     width: 100%;
@@ -71,16 +79,19 @@
     font-family: 'Poppins', sans-serif;
 }
 .form-group select {
-    background-color: #333C60 !important;
-    color: #ECB449;
+    background-color: #333C60 !important; /* Fond bleu foncé */
+    color: #ECB449; /* Texte doré */
     border: 1px solid #ECB449;
 }
 
+/* ✅ Modifier l'apparence des options de la liste déroulante */
 .form-group select option {
-    background-color: #333C60;
-    color: #ECB449;
+    background-color: #333C60; /* Fond bleu foncé */
+    color: #ECB449; /* Texte doré */
 }
 
+
+/* ✅ Checkbox */
 .form-group input[type="checkbox"] {
     width: auto;
     margin-right: 5px;
@@ -92,6 +103,7 @@
     color: #ECB449;
 }
 
+/* ✅ Bouton */
 .btn-submit {
     background-color: #ECB449;
     color: black;
@@ -106,26 +118,27 @@
 }
 .button-container {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 20px; /* Ajuste cette valeur pour créer plus d'espace */
 }
 .btn-submit:hover {
     transform: scale(1.05);
     background-color: #FFE552;
 }
 
+/* ✅ Confirmation */
 .confirmation {
     display: none;
     color: #ECB449;
     font-weight: 600;
     margin-top: 15px;
 }
-
+/* ✅ Améliorer le focus des champs */
 .form-group input:focus,
 .form-group select:focus,
 .form-group textarea:focus {
-    border-color: #FFAB31;
-    box-shadow: 0px 0px 10px rgba(255, 171, 49, 0.6);
-    outline: none;
+    border-color: #FFAB31; /* Doré plus lumineux */
+    box-shadow: 0px 0px 10px rgba(255, 171, 49, 0.6); /* Glow autour du champ */
+    outline: none; /* Supprime le contour bleu par défaut */
     transition: all 0.2s ease-in-out;
 }
 
@@ -133,22 +146,10 @@
     display: none !important;
 }
 .privacy-note {
-    font-size: 0.85rem;
-    color: #ECB449;
+    font-size: 0.85rem; /* Taille discrète mais lisible */
+    color: #ECB449; /* Même couleur dorée que le reste du texte */
     text-align: center;
-    margin-top: 15px;
-    opacity: 0.8;
+    margin-top: 15px; /* Espacement sous le bouton */
+    opacity: 0.8; /* Rend le texte légèrement plus subtil */
 }
-
-/** MOBILE OPTIMIZATIONS **/
-@media screen and (max-width: 768px) {
-    .contact-container {
-        margin: 20px auto;
-        padding: 15px;
-    }
-    .form-group input,
-    .form-group textarea,
-    .form-group select {
-        width: 100%;
-    }
-}
+/** FIN FORMULAIRE **/

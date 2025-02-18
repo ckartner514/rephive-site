@@ -9,26 +9,31 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/footer.css">
 </head>
+
 <body>
+
     <!-- ✅ Header chargé dynamiquement -->
     <div id="header-placeholder"></div>
+
     <main>
         <section class="hero">
             <div class="container">
                 <h1>Find & Hire Independent Sales Reps to Grow Your Business</h1>
                 <h2>The fastest way to find top-performing sales reps & scale your business</h2>
-                <p class="index-text">
-                    Finding and hiring the right sales representatives can be a challenge, especially when expanding into new markets or industries. 
-                    That’s where <span class="tag-word"><strong>RepHive</strong></span> comes in—connecting businesses with 
-                    <span class="tag-word"><strong>independent sales reps to grow your network</strong></span>, enhance 
-                    <span class="tag-word"><strong>market penetration</strong></span>, and streamline your <span class="tag-word"><strong>sales strategy</strong></span> for sustainable success.
-                    <br><br>
-                    We not only connect you with top-performing professionals, but also 
-                    <span class="tag-word"><strong>help you navigate pre-export strategies, market entry, and sales development in Canada</strong></span>. 
-                    From setting up your first sales operations to scaling efficiently, we provide the tools and expertise to turn your expansion goals into reality.
-                </p>
+                
+            <p class="index-text">
+                Finding and hiring the right sales representatives can be a challenge, especially when expanding into new markets or industries. 
+                That’s where <span class="tag-word"><strong>RepHive</strong></span> comes in—connecting businesses with 
+                <span class="tag-word"><strong>independent sales reps to grow your network</strong></span>, enhance 
+                <span class="tag-word"><strong>market penetration</strong></span>, and streamline your <span class="tag-word"><strong>sales strategy</strong></span> for sustainable success.
+                <br><br>
+                We not only connect you with top-performing professionals, but also 
+                <span class="tag-word"><strong>help you navigate pre-export strategies, market entry, and sales development in Canada</strong></span>. 
+                From setting up your first sales operations to scaling efficiently, we provide the tools and expertise to turn your expansion goals into reality.
+            </p>
             </div>
         </section>
+
         <section class="services">
             <div class="service-container">
                 <div class="service-box">
@@ -57,16 +62,19 @@
                 </div>
             </div>
         </section>
+
         <section class="industry-carousel">
             <div class="carousel-title">
                 Explore the industries we serve and see how RepHive can help your business thrive
             </div>
-            <div class="slideshow-container">
+        
+                <div class="slideshow-container">
                 <div class="slide"><img src="img/jacket-fashion-textile.png" alt="Fashion & Textile"><br>Fashion & Textile</div>
                 <div class="slide"><img src="img/food-beverages.png" alt="Food & Beverages"><br>Food & Beverages</div>
                 <div class="slide"><img src="img/saas-technology.png" alt="Technology & SaaS"><br>Technology & SaaS</div>
             </div>
         </section>
+
         <div class="footer-branding-container">
             <div class="footer-branding">
                 <div class="footer-logo-container">
@@ -75,24 +83,27 @@
                 </div>
             </div>
         </div>
-        <!-- ✅ Footer chargé dynamiquement -->
-        <div id="footer-placeholder"></div>
-        <!-- ✅ Bouton "Book a Meeting" caché sur mobile -->
-        <a href="#contact" class="cta-button mobile-hidden">Book a Meeting</a>
-    </main>
-    <script src="js/include.js"></script>
+                                  
+    <!-- ✅ Footer chargé dynamiquement -->
+    <div id="footer-placeholder"></div>
+
+     <script src="js/include.js"></script>
+
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             // ✅ Ajuste le CTA "Book a Meeting"
             var ctaButton = document.querySelector(".cta-button");
             var header = document.querySelector("header");
+
             if (ctaButton && header) {
                 var headerHeight = header.offsetHeight; 
                 ctaButton.style.top = (headerHeight + 10) + "px"; // Ajuste la position sous le header
             }
+
             // ✅ Carrousel des industries
             let slides = document.querySelectorAll(".slide");
             let index = 0;
+
             if (slides.length > 0) { 
                 function showSlide() {
                     slides.forEach(slide => slide.style.display = "none");
@@ -104,6 +115,8 @@
             }
         });
     </script>
+
     <script src="js/cta.js" defer></script>
+
 </body>
 </html>

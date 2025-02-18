@@ -1,49 +1,56 @@
+/* ✅ Conteneur principal */
 .faq-container {
     max-width: 800px;
     margin: 50px auto;
     text-align: center;
 }
 
+/* ✅ Titre principal */
 .faq-container h1 {
     font-size: 2.5rem;
     color: #1b1b69; 
     margin-bottom: 20px;
 }
 
+/* ✅ Blocs de FAQ */
 .faq-item {
     background: linear-gradient(to bottom, rgba(27, 27, 105, 0.9), rgba(15, 30, 64, 0.9));
     box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.5),
-                inset 0px 10px 20px rgba(255, 255, 255, 0.2),
-                inset 0px -10px 20px rgba(0, 0, 0, 0.4);
+    inset 0px 10px 20px rgba(255, 255, 255, 0.2),
+    inset 0px -10px 20px rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(10px);
     transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    color: #ECB449;
+    color: #ECB449; /* Texte en Jaune RepHive */
     padding: 20px;
     margin: 15px 0;
     border-radius: 10px;
     text-align: left;
 }
 
+/* ✅ Effet au survol */
 .faq-item:hover {
-    background: linear-gradient(to bottom, rgb(23, 23, 108), rgba(20, 50, 100, 1));
+    background: linear-gradient(to bottom, rgb(23, 23, 108), rgba(20, 50, 100, 1)); /* Bleu légèrement plus clair */
     box-shadow: 0px 20px 40px rgba(255, 200, 73, 0.2), 
                 inset 0px 10px 15px rgba(255, 255, 255, 0.15), 
                 inset 0px -10px 15px rgba(0, 0, 0, 0.3);
     transition: all 0.3s ease-in-out;
 }
 
+/* ✅ Questions */
 .faq-item h3 {
     font-size: 1.3rem;
     margin-bottom: 10px;
     color: #ECB449;
 }
 
+/* ✅ Réponses */
 .faq-item p {
     font-size: 1rem;
     line-height: 1.5;
-    color: #ECB449;
+    color: #ECB449
 }
 
+/* ✅ CTA final */
 .faq-contact {
     margin-top: 30px;
     font-size: 1.2rem;
@@ -57,16 +64,5 @@
 }
 
 .faq-contact a:hover {
-    color: #FFE552;
-}
-
-/** MOBILE OPTIMIZATIONS **/
-@media screen and (max-width: 768px) {
-    .faq-container {
-        margin: 20px auto;
-        padding: 10px;
-    }
-    .faq-item {
-        padding: 15px;
-    }
+    color: #FFE552; /* Jaune plus lumineux */
 }

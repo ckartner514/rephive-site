@@ -1,4 +1,3 @@
-/* ✅ Conteneur principal */
 .pricing-container {
     max-width: 850px;
     margin: 50px auto;
@@ -12,8 +11,7 @@
     backdrop-filter: blur(6px);
     padding: 40px;
 }
-/** Debut Tableau/**
-/* ✅ Titre */
+
 .pricing-title {
     font-size: 2.3rem;
     color: #1B1B69;
@@ -21,7 +19,6 @@
     font-weight: bold;
 }
 
-/* ✅ Sous-titre */
 .pricing-subtitle {
     font-size: 1.2rem;
     color: #FFAB31;
@@ -29,7 +26,6 @@
     font-weight: 500;
 }
 
-/* ✅ Tableau */
 .pricing-table {
     width: 100%;
     border-collapse: collapse;
@@ -38,35 +34,30 @@
     margin-bottom: 25px;
 }
 
-/* ✅ En-têtes du tableau */
 .pricing-table th {
     background-color: #ECB449;
     color: #1B1B69;
     padding: 12px;
     font-size: 1.2rem;
-    border-bottom: 1.5px solid #1B1B69; /* Bordure plus visible */
+    border-bottom: 1.5px solid #1B1B69;
 }
 
-/* ✅ Cellules du tableau */
 .pricing-table td {
     padding: 12px;
-    border-bottom: 1.5px solid #ECB449; /* Bordure plus visible */
+    border-bottom: 1.5px solid #ECB449;
     color: #ECB449;
     font-size: 1.1rem;
 }
 
-/* ✅ Supprime la bordure pour la dernière ligne */
 .pricing-table tr:last-child td {
     border-bottom: none;
 }
 
-/* ✅ Effet hover */
 .pricing-table tr:hover td {
-    background-color: rgba(255, 255, 255, 0.15); /* ✅ Léger surlignage */
-    transition: background-color 0.4s ease-in-out; /* ✅ Transition plus douce */
+    background-color: rgba(255, 255, 255, 0.15);
+    transition: background-color 0.4s ease-in-out;
 }
 
-/* ✅ Texte personnalisé */
 .custom-offer {
     font-size: 1.1rem;
     color: #FFAB31;
@@ -74,7 +65,6 @@
     font-weight: 500;
 }
 
-/* ✅ Lien Contact */
 .contact-link {
     color: #ECB449;
     font-weight: bold;
@@ -85,102 +75,21 @@
     color: #FFE552;
     text-decoration: none;
 }
-/** Fin Tableau/**
 
-/** TEMOIGNAGE/**
-/* ✅ Section Témoignages */
-.testimonials-section {
-    margin-top: 50px;
-    text-align: center;
-}
-
-/* ✅ Titre de la section */
-.testimonials-title {
-    font-size: 1.8rem;
-    color: #ECB449;
-    margin-bottom: 20px;
-}
-
-/* ✅ Conteneur du slider */
-.testimonial-container {
-    width: 100%;
-    max-width: 800px;
-    overflow: hidden;
-    position: relative;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: linear-gradient(to bottom, rgba(27, 27, 105, 0.9), rgba(15, 30, 64, 0.9)); /* Même fond que le pricing */
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0px 8px 20px rgba(236, 180, 73, 0.3),
-                inset 0px 10px 15px rgba(255, 255, 255, 0.2),
-                inset 0px -10px 15px rgba(0, 0, 0, 0.3);
-}
-
-
-/* ✅ Slider */
-.testimonial-slider {
-    display: flex;
-    width: 400%;
-    animation: slide 20s infinite ease-in-out;
-}
-
-/* ✅ Témoignages */
-.testimonial {
-    min-width: 100%;
-    box-sizing: border-box;
-    text-align: center;
-    color: #ECB449;
-    font-size: 1rem;
-    padding: 20px;
-    opacity: 1;
-    transition: opacity 1s ease-in-out;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    line-height: 1.6;
-    max-width: 75%;
-}
-
-/* ✅ Nom et entreprise */
-.testimonial strong {
-    display: block;
-    font-size: 0.9rem;
-    font-weight: 600;
-    color: #FFD700;
-}
-
-/* ✅ Indicateurs de pagination */
-.testimonial-dots {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-}
-
-.dot {
-    height: 10px;
-    width: 10px;
-    margin: 0 4px;
-    background-color: #ECB449;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.3s ease;
-    opacity: 0.5;
-}
-
-.dot.active {
-    opacity: 1;
-    transform: scale(1.2);
-}
-
-/* ✅ Animation du slider */
-@keyframes slide {
-    0%, 20% { transform: translateX(0%); }
-    25%, 45% { transform: translateX(-100%); }
-    50%, 70% { transform: translateX(-200%); }
-    75%, 95% { transform: translateX(-300%); }
-    100% { transform: translateX(-400%); }
+/** MOBILE OPTIMIZATIONS **/
+@media screen and (max-width: 768px) {
+    .pricing-container {
+        padding: 20px;
+        margin: 20px auto;
+    }
+    .pricing-table {
+        font-size: 0.9rem;
+    }
+    .pricing-table th,
+    .pricing-table td {
+        padding: 8px;
+    }
+    .table-responsive {
+        overflow-x: auto;
+    }
 }
