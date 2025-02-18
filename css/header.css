@@ -103,3 +103,21 @@
         display: none !important;
     }
 }
+/* Par défaut, on affiche la version desktop */
+.mobile-only {
+    display: none;
+}
+.desktop-only {
+    display: block;
+}
+
+/* En mobile, on inverse : on affiche la version mobile et on cache le bouton CTA */
+@media screen and (max-width: 768px) {
+    .mobile-only {
+        display: block;
+    }
+    .desktop-only {
+        display: none;
+    }
+}
+
